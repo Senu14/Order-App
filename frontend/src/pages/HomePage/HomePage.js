@@ -4,11 +4,12 @@ import  ReactDOM  from "react-dom";
 import { Link, Route, Router } from "react-router-dom";
 import './HomePage.scss';
 import { BiChevronRight} from "react-icons/bi";
-
+import Header from "../../components/Header";
 const HomePage = () => {
 
     return (
         <>
+        <Header/>
           <div className="homepage">
            
             <button className="buttonhomepage">Add menu item
@@ -56,6 +57,8 @@ const HomePage = () => {
               </Link> 
              </button>
           </div>
+
+          <img src="/images/tomato.png" alt="background-tomato" className="background-tomato2" />
         </>
     )
 }

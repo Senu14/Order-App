@@ -12,7 +12,15 @@
    align-items: center;
 }
  
-
+.background-tomato2 {
+   z-index: -1;
+   position: absolute;
+   right: 0;
+   left :10;
+   height: 600px;
+   margin-top: -50%;
+   opacity: 20%;
+}
 /*.button {
     background-color: #f2b028;
     border: none;
