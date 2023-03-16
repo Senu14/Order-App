@@ -61,7 +61,7 @@ const LoginPage = () => {
     <>
       <style>{'body {  background-color: #F4E9D6 }'}</style>
       <h1 className="logintext" style={{ textAlign: "center" }} >
-        You are welcome!
+        Welcome!
       </h1>
       <img src="/images/logo.png" alt="Logo" className="img" />
       <form onSubmit={handleSubmit} className="form-login">

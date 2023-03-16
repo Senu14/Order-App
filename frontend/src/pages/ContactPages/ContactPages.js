@@ -16,6 +16,7 @@ const ContactPages = ()=> {
 <form className='holy-control' onSubmit={handleSubmit(onsubmit)}>
      {/* <div className="Componant"> */}
 <Header/>
+<img src="/images/background.png" alt="background-logo" className="background-logo3" />
 <h1 className='title'>Contact Us</h1>
 
         <label>Name</label>

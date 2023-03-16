@@ -1,0 +1,198 @@
+.line-add {
+    justify-content: center;
+    text-decoration: underline 2px;
+    text-decoration-color: #795548;
+    margin-left: 40px;
+}
+
+body {
+    
+    background-color: #F4E9D6;
+}
+
+.background-logo {
+    z-index: -1;
+    position: absolute;
+    right: 0%;
+    height: 600px;
+    margin-top: 15%;
+    opacity: 20%;
+}
+
+
+.input-create-dish {
+    width: 20px;
+    background-color: #E6D4B8;
+    border: 0.5; 
+    border-color: #4B480A;
+    border-radius: 0.5ex;
+}
+
+.icon {
+    background-color: #AE431E;
+    color: white;
+    width: 18px;
+    height: 18px;
+
+}
+
+
+.button-create {
+    margin-top: 50px;
+    margin-left: 15px;
+    padding: 10px 30px;
+    background-color: #E9C891;
+    border: none;
+    border-color: #4B480A;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+
+
+.quantity {
+    padding-top: 1px;
+    background-color: #E6D4B8;
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+.name-sales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 60px;
+}
+.menu-item-dish{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 100px;
+    margin-top: 10px;
+    height: 30px;
+  }
+  
+
+.input-container {
+    display: block;
+    margin-left: 45px;
+    
+}
+
+.ingredient {
+    display: inline-block;
+    width: 35%;
+    margin-right: 20px;
+    margin-left: -25px; 
+    background-color: #E6D4B8;
+    border: 0.5; 
+    border-color: #4B480A;
+    border-radius: 0.5ex;
+}
+.text-style{
+display: block;
+margin-left: 15px;
+}
+
+.text-1{
+    display: inline-block;
+    // width: 50%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.text-2{
+    display: inline-block;
+    // width: 50%;
+    
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.text-3{
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.update-button{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #c7a770;
+    // padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+    opacity: 70%;
+}
+
+.form-add{
+    margin-top: 10%;
+}
+
+.minus {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #F4E9D6;
+  color: #AE431E;
+  font-size: 20px;
+  display: inline-block;
+  align-items: flex-end;
+  cursor: pointer;
+  margin-left: 5px;
+
+}
+
+.plus{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #F4E9D6;
+  color: #AE431E;
+  font-size: 20px;
+  display: inline-block;
+  align-items: flex-end;
+  cursor: pointer;
+  margin-top: 71px;
+}
+
+
+
+.button-container {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    margin-top:-65px;
+    margin-right: 15px;
+  }
+  
+  .dish-name{
+    width: 45%;
+    height: 20px;
+    border: 0.5; 
+    border-color: #4B480A;
+    border-radius: 0.5ex;
+    background-color: #E6D4B8;
+  }
+
+  .name-dish{
+    margin-left: 30px;
+  }

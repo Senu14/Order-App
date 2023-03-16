@@ -34,12 +34,13 @@ const CreateAccountPage = () => {
           <input className='space' placeholder="Password" {...register('password', { required: true })} />
         </div>
 
-
+        <img src="/images/tomato2.png" alt="background-tomato" className="background-tomato" />
         <div>
           <button className='last' type="submit" >Register</button>
         </div>
 
       </form>
+
     </>
 
   )

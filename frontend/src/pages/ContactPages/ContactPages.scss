@@ -5,8 +5,16 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
  }
+ .background-logo3 {
+    z-index: -1;
+    position: absolute;
+    right: 0%;
+    height: 600px;
+    margin-top: 45%;
+    opacity: 20%;
+}
 .holy-control{
-    background-image: url(../../assets/Images/logo.png), url(../../assets/Images/pexels-tbee-82256.jpg);
+    // background-image: url(../../assets/Images/logo.png), url(../../assets/Images/pexels-tbee-82256.jpg);
     background-repeat: no-repeat;
     flex-direction: column;
     z-index: -1;
