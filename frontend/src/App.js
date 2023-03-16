@@ -10,6 +10,7 @@ import ShoppingListPage from './pages/ShoppingListPage/ShoppingListPage';
 import CreateOrderPage from './pages/CreateOrderPage/CreateOrderPage';
 import ContactPages from './pages/ContactPages/ContactPages';
 import MenuPage from'./pages/MenuPage/MenuPage';
+import EditDish from'./pages/EditDishPage/EditDish';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
     <Route path="/MenuPage" element={<MenuPage />} />
     <Route path="/WelcomePage" element={<WelcomePage />} />
     <Route path='/ContactPages' element={<ContactPages />} />          
+    <Route path='/EditDish/:id' element={<EditDish />} /> 
     </Routes>
 
     </>

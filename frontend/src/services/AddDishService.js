@@ -33,10 +33,21 @@ const create = data => {
   // return http.post("/dishes", dataToSend);
 };
 
-const update = (id, data) => {
-  let dataToSend = new FormData();
-  dataToSend.append("name", data.name);
-  return http.put(`/dishes/${id}`, dataToSend);
+const update = (id, data) => {var data = qs.stringify({
+  'name': data.name
+});
+var config = {
+  method: 'put',
+  maxBodyLength: Infinity,
+  url: `http://localhost:8080/api/dishes/${id}`,
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded'
+  },
+  data: data
+};
+
+return axios(config);
+
 };
 
 const remove = id => {

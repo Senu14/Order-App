@@ -10,13 +10,13 @@ const MenuPage = () => {
   let navigate = useNavigate();
   const [dishes, setDishes] = useState([]);
   const [currentIndex] = useState(-1);
-  
+
   const initialDishState = {
     id: null,
     name: "",
   };
   const [currentDish, setCurrentDish] = useState(initialDishState);
- 
+
   useEffect(() => {
     retrieveDish();
   }, []);
@@ -58,12 +58,11 @@ const MenuPage = () => {
           <div className="general">
             {
               dishes.map((d, index) => (
-                <div className="group-item-dish">
+                <div key={index} className="group-item-dish">
                   {d.name}
-
                   <div className="menu-buttons">
-                  <button className="edit-dish" onClick={() => navigate('/AddMenuPage')}>Edit</button>
-                  <button className="delete-dish" onClick={() => deleteDish(d)}>Delete</button>
+                    <button className="edit-dish" onClick={() => navigate('/EditDish/' + d.id)}>Edit</button>
+                    <button className="delete-dish" onClick={() => deleteDish(d)}>Delete</button>
                   </div>
                 </div>
               ))
@@ -71,9 +70,7 @@ const MenuPage = () => {
           </div>
         </div>
       </div>
-      <div id="elipse5">
-        <img src="/images/elipse5.png" alt="" />
-      </div>
+      <img src="/images/logo.png" alt="background-tomato" className="background-tomato2" />
     </>
   );
 };
