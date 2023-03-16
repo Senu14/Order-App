@@ -1,0 +1,61 @@
+.background-logo {
+    z-index: -1;
+    position: absolute;
+    right: 0%;
+    height: 600px;
+    margin-top: 35%;
+    opacity: 20%;
+}
+
+.close-button {
+    margin: auto;
+    display: block;
+    background-color: #6C310A;
+    padding: 1px 5px 1px;
+    margin-top: 5%;
+    color: white;
+
+}
+
+.profile-image {
+    margin: auto;
+    margin-top: 10%;
+    display: block;
+    width: 200px;
+}
+
+.imagen-container {
+    
+    margin: auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+
+.username {
+    text-align: center;
+    background-color: #E9C891;
+    width: 150px;
+    height: 30px;
+    margin-left: 30%;
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.logout {
+    margin-top: 10%;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    font-size: 2em;
+}
+
+.i{
+    color: #AE431E;
+}
+

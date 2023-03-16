@@ -1,0 +1,85 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4E9D6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.log-input {
+  width: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-color: #4B480A;
+}
+
+.login-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  width: 50px;
+  background-color: #D2B48C;
+  border: none;
+  border-color: #4B480A;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.register-button {
+  margin-top: 10px;
+  padding: 10px 10px;
+  background-color: #D2B48C;
+  border-color: #4B480A;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #D2B48C;
+}
+
+span {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+
+.txt {
+  color: #6C310A;
+  text-decoration: underline;
+  text-decoration-color: #8A8635;
+}
+
+.register-txt {
+  margin-top: 30%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+}

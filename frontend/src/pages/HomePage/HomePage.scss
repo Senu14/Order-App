@@ -1,0 +1,53 @@
+
+ .body-home {
+    text-align: center;
+    background-color: #F4E9D6 ;
+}
+
+
+.homepage {
+ 
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+ 
+
+/*.button {
+    background-color: #f2b028;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius:5px;
+   
+  }*/
+  .buttonhomepage {
+    margin-top: 50px;
+    padding: 10px 30px;
+    background-color: #E9C891;
+    border: none;
+    border-color: #4B480A;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+ .icon {
+    background-color: #AE431E;
+    color: white;
+    width: 18px;
+    height: 18px;
+
+ }
+

@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding-top: 60px;
+}
+
+.container form {
+  background-image: url(../../assets/Images/logo.png);
+  background-repeat: no-repeat;
+  opacity: 60%;
+  background-color: #E9C891;
+  width: 45%;
+  max-width: 600px;
+  padding: 30px 30px 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px #3A180A;
+  position: center;
+}
+
+.control form {
+  z-index: 0;
+  opacity: 60%;
+}
+
+.firstname {
+  flex-basis: 68%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #3A180A;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.title {
+  color: #3A180A;
+}
+
+textarea {
+  width: 100%;
+}
+
+.placeholder {
+  font-size: 14px;
+}
+
+.knap {
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+  width: 60%;
+  background-color: #3A180A;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .control, .control textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
