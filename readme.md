@@ -101,6 +101,9 @@ Nadia:
 - Readme
 - Diagrams
 - Postman documentation
+- Backend hosting
+- Frontend hosting
+- DB hosting
 
 Rashidi: 
 - Create order page
