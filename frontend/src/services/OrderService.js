@@ -18,7 +18,7 @@ const create = data => {
   var config = {
     method: 'post',
     maxBodyLength: Infinity,
-    url: 'http://localhost:8080/api/orders',
+    url: 'https://orderapp.onrender.com/api/orders',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },

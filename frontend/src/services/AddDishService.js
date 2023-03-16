@@ -20,7 +20,7 @@ const create = data => {
   var config = {
     method: 'post',
     maxBodyLength: Infinity,
-    url: 'http://localhost:8080/api/dishes',
+    url: 'https://orderapp.onrender.com/api/dishes',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
@@ -39,7 +39,7 @@ const update = (id, data) => {var data = qs.stringify({
 var config = {
   method: 'put',
   maxBodyLength: Infinity,
-  url: `http://localhost:8080/api/dishes/${id}`,
+  url: `https://orderapp.onrender.com/dishes/${id}`,
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded'
   },

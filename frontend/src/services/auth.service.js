@@ -2,7 +2,7 @@ import axios from "axios";
 import qs from 'qs';
 import http from "./http-common";
 
-const API_URL = "http://localhost:8080/api/users/";
+const API_URL = "https://orderapp.onrender.com/api/users/";
 
 const register = (name, username, email, password) => {
   var data = qs.stringify({
@@ -14,7 +14,7 @@ const register = (name, username, email, password) => {
   var config = {
     method: 'post',
     maxBodyLength: Infinity,
-    url: 'http://localhost:8080/api/users',
+    url: 'https://orderapp.onrender.com/api/users',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
