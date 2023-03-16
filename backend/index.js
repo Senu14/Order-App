@@ -78,7 +78,8 @@ app.use(function (req, res, next) {
 
 db.order = require("./models/order.model")(sequelize, Sequelize);
 db.dish = require("./models/dish.model")(sequelize, Sequelize);
-
+db.ingredient = require("./models/ingredient.model")(sequelize, Sequelize);
+db.user = require("./models/user.model")(sequelize, Sequelize);
 db.dishorders = require("./models/dish-order.model")(sequelize, Sequelize);
 
 db.order.belongsToMany(db.dish, {
