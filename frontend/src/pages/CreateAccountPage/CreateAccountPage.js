@@ -1,24 +1,40 @@
 import React from 'react'
 import './CreateAccountPage.scss';
 import { useForm } from 'react-hook-form'
-import Header from '../../components/Header';
+import AuthService from '../../services/auth.service';
+import { Link } from 'react-router-dom';
 
 const CreateAccountPage = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
+
+  const onSubmit = data => {
+    AuthService.register(data.name, data.username, data.email, data.password)
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.log(error.response.data);
+      });
+  };
+
 
   return (
     <>
 
-      <form className="container" onSubmit={handleSubmit(onsubmit)}>
-        <Header />
-
+      <form className="container" onSubmit={handleSubmit(onSubmit)}>
 
         <h1 className='title'>Create an Account</h1>
 
         <div className="form-control ">
-          <label for="firstname">Name</label>
+          <label htmlFor="firstname">Name</label>
           <input className='space' placeholder="Username" {...register('name', { required: true })} />
+
+          {/* {errors.name && <span>write your full name</span>} */}
+
+        </div>
+        <div className="form-control ">
+          <label htmlFor="firstname">Username</label>
+          <input className='space' placeholder="Username" {...register('username', { required: true })} />
 
           {/* {errors.name && <span>write your full name</span>} */}
 
@@ -36,8 +52,11 @@ const CreateAccountPage = () => {
 
         <img src="/images/tomato2.png" alt="background-tomato" className="background-tomato" />
         <div>
-          <button className='last' type="submit" >Register</button>
+          <Link to="/HomePage">
+            <button className='last' type="submit" >Register</button>
+          </Link>
         </div>
+
 
       </form>
 

@@ -1,30 +1,36 @@
 import axios from "axios";
+import qs from 'qs';
+import http from "./http-common";
 
 const API_URL = "http://localhost:8080/api/users/";
 
-const register = (username, email, password) => {
-  // const encodedPassword = btoa(password);
-  // const encodedUsername = btoa(username);
-  return axios.post(API_URL + "signup", {
-    username,
-    //encodedUsername,
-    email,
-    password,
-    //password: encodedPassword,
+const register = (name, username, email, password) => {
+  var data = qs.stringify({
+    'name': name,
+    'username': username,
+    'email': email,
+    'password': password
   });
+  var config = {
+    method: 'post',
+    maxBodyLength: Infinity,
+    url: 'http://localhost:8080/api/users',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    data: data
+  };
+
+  return axios(config);
 };
 
 const login = (username, password) => {
-  //const encodedPassword = btoa(password);
-  //const encodedUsername = btoa(username);
+  
+  return axios.post(API_URL + "signin", {
+    username,
+    password,
+  })
 
-  return axios
-    .post(API_URL + "signin", {
-      username,
-      //username:encodedUsername,
-      password,
-      //password: encodedPassword,
-    })
     .then((response) => {
       if (response.data.accessToken) {
         localStorage.setItem("user", JSON.stringify(response.data));
