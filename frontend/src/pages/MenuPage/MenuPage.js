@@ -70,7 +70,7 @@ const MenuPage = () => {
           </div>
         </div>
       </div>
-      <img src="/images/logo.png" alt="background-tomato" className="background-tomato2" />
+      <img src="/images/background.png" alt="background-tomato" className="background-logo1" />
     </>
   );
 };
