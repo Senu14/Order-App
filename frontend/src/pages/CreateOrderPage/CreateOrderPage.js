@@ -7,7 +7,7 @@ import { BiChevronRight } from "react-icons/bi";
 import Header from '../../components/Header'
 import AddDishService from "../../services/AddDishService";
 import { Link } from "react-router-dom";
-import OrderService from "../../services/OrderServices";
+import OrderService from "../../services/OrderService";
 
 
 const CreateOrderPage = () => {
@@ -33,16 +33,16 @@ const CreateOrderPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
-      await OrderService.create({ days });
+      await OrderService.create({ days, inputList });
+      // Realizar acciones adicionales aquí, como guardar otros datos relacionados con la orden
+      // Navega a la página de la lista de compras
       window.location.href = "/ShoppingListPage";
     } catch (error) {
       console.error("Error al crear la orden:", error);
     }
   };
-
-
 
   const addMenuItem = (e) => {
     console.log(inputList)
@@ -78,7 +78,7 @@ const CreateOrderPage = () => {
 
         <div>
           <div className="name-sales">
-            <p className="name1">Name</p>
+            <p className="name1">Dish name</p>
             <p className="ave-sale">Ave. sales/day</p>
           </div>
 
@@ -99,20 +99,17 @@ const CreateOrderPage = () => {
             </div>
           ))}
         </div>
+
         <div>
-          <button type="submit" className="button-create">
-            Create and go to shopping list
-            <div className="icon">
-              <Link to="/ShoppingListPage">
-                <BiChevronRight />
-              </Link>
-            </div>
-          </button>
-        </div>
-      </form>
-      <div>
-        <button className="add" onClick={addMenuItem}>Add </button>
+        <button className="button-create" >Create and go to shopping list  <BiChevronRight /></button>
       </div>
+      
+      </form>
+      <button className="add" onClick={addMenuItem}>
+            Add item
+      </button>  
+
+      <img src="/images/tomato2.png" alt="background-tomato" className="background-tomato" />
     </>
   );
 }
