@@ -16,8 +16,17 @@ body {
    position: relative;
    font-size: 20px;
 }
+
+.background-tomato {
+   z-index: -1;
+   position: absolute;
+   right: 0;
+   height: 406px;
+   margin-top: 15%;
+   opacity: 20%;
+}
 .container {
-   background-image: url(../../assets/Images/logo.png), url(../../assets/Images/pexels-tbee-82256.jpg);
+   // background-image: url(../../assets/Images/logo.png), url(../../assets/Images/pexels-tbee-82256.jpg);
    background-repeat: no-repeat;
    background-position: left top;
    margin-bottom: 20px;
