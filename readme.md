@@ -33,6 +33,13 @@ And finally we have an order in which we store the quantity of the dish we are g
 
 We chose this color palette because it is a reference to food and at the same time it combines well with the chosen logo.
 
+## Hosting
+
+### Backend
+https://orderapp.onrender.com/
+### Frontend
+https://order-app-eta.vercel.app/
+
 ## Planning
 
 ### Week 1
