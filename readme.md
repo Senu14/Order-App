@@ -119,7 +119,7 @@ Senait:
 
 ```bash 
 cd YOUR FOLDER
-git clone https://github.com/Senu14/Order-app.git
+git clone https://github.com/NadiaVg/Order-App.git 
 ```
 
 ![Alt text](https://img.shields.io/badge/backend-node.js-green)
@@ -158,3 +158,5 @@ npm start
 # Documentation
 
 [POSTMAN](https://documenter.getpostman.com/view/17513635/2s93Jus2bh)
+
+[OLD REPO](https://github.com/Senu14/Order-app.git)
