@@ -119,6 +119,9 @@ Rashidi:
 
 Senait: 
 - Contact page
+- Create Account Page
+- Project Presentation
+
 
 # Installation and start
 
